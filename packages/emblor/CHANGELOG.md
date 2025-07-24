@@ -17,18 +17,15 @@
 ### Patch Changes
 
 - 0a3bf3d: 🚀 Features
-
   - Autocomplete options now display on input focus, improving user experience and discoverability of available tags. by @JaleelB [(a670468)](https://github.com/JaleelB/emblor/commit/a670468)
   - Implemented "add tags on blur" functionality in the TagInput component, allowing users to add tags when leaving the input field. by @JaleelB [(da0d5bf)](https://github.com/JaleelB/emblor/commit/da0d5bf)
   - Added keyboard navigation for autocomplete suggestions, enhancing accessibility and ease of use. by @JaleelB [(843ede6)](https://github.com/JaleelB/emblor/commit/843ede6)
 
   🐞 Bug Fixes
-
   - Fixed issue with tag count not updating correctly during keyboard navigation in the TagInput component. by @JaleelB [(af21de2)](https://github.com/JaleelB/emblor/commit/af21de2)
   - Resolved bug where tag count wasn't properly updated when toggling tags in the Autocomplete component. by @JaleelB [(9b1b919)](https://github.com/JaleelB/emblor/commit/9b1b919)
 
   🧹 Chores
-
   - Updated dependencies to ensure compatibility and leverage latest improvements. by @JaleelB [(de749b7)](https://github.com/JaleelB/emblor/commit/de749b7)
 
 ## 1.4.5
@@ -36,7 +33,6 @@
 ### Patch Changes
 
 - da8b11b: 🚀 Features
-
   - Added multi-tag paste support with delimiter handling
 
 ## 1.4.4
@@ -50,7 +46,6 @@
 ### Patch Changes
 
 - 247747e: 🚀 Features
-
   - Added multi-tag paste support with delimiter handling
 
 ## 1.4.2
@@ -58,16 +53,13 @@
 ### Patch Changes
 
 - d3f036b: 🚀 Features
-
   - Autocomplete: Automatically clear the input field after selecting a tag from the autocomplete suggestions.
   - Popover: Added `usePortal` prop to Popover to handle rendering in modal contexts better. This ensures that the Popover can render correctly in various z-index contexts and when used within modal dialogs.
 
   🔄 Refactoring
-
   - Autocomplete: Replaced traditional command components with custom divs and input for improved customization and performance.
 
   🛠️ Fixes
-
   - Tag Input: Cleaned up debugging logs from the tag input feature, reducing console clutter and potential performance hits during production use.
 
 ## 1.4.1
@@ -75,7 +67,6 @@
 ### Patch Changes
 
 - e68ae9d: 🚀 Features:
-
   - Added styling prop for clear all tags button that appears when clearAll prop is set to true
 
 ## 1.4.0
@@ -87,7 +78,6 @@
   New Styling API: Introduced a styling API for the TagInput component and its subcomponents. This update allows developers to customize the appearance of each part of the component using a structured classNames prop. Each subcomponent, including TagList, Autocomplete, and TagPopover, can now be styled individually to match specific design requirements.
 
   Detailed Enhancements Include:
-
   - TagInput: Ability to apply custom classes to the main container and input elements.
   - TagList: Customization options for the list container and individual tags, including sortable lists.
   - Autocomplete: Extended styling capabilities for autocomplete triggers, content, command lists, and items.
@@ -115,11 +105,9 @@
 ### Patch Changes
 
 - 0e63476: - **Tag List Component Enhancements**
-
   - Extended the `Tag` component within the `TagList` to accept `direction` and `draggable` properties, allowing for enhanced customization and interactivity of the tags.
   - Enhanced input field flexibility to dynamically fit and adjust within the available space, wrapping only when necessary and maintaining a minimum width for usability.
   - **Additional Style Variants**
-
     - Included new border style variants for the `Tag` component, providing more visual customization options to better suit diverse UI design requirements.
 
   - **Tag Popover Adjustments**
@@ -138,14 +126,12 @@
 ### Patch Changes
 
 - 4ca4478: 🚀 Features:
-
   - Tag Select Toggle (c90339a): Implemented a toggle functionality for selecting tags in the autocomplete component. Users can now click on a tag to either add it to or remove it from the selection.
   - Dynamic Popover Positioning (6aa90c8): Refined the positioning of the popover content in the autocomplete component to dynamically adjust its position relative to the trigger container, ensuring a consistent 16px gap.
   - Combobox with Button Trigger (a989aed): Refactored the autocomplete component's tag popover to utilize a button as the trigger, enhancing accessibility and user interaction.
   - Button Trigger with Focus Management (1882c27): Updated the tag popover to use a button trigger with improved focus management, ensuring the popover remains open while the input is focused and closes appropriately when focus is lost.
 
   🐞 Bug Fixes:
-
   - Popover Focus Issue (98c11c8): Resolved an issue where the popover did not close upon outside clicks when autocomplete was enabled, improving UX by ensuring consistent popover behavior.
   - Clearing Tags Logic (c316f20): Provided default logic to handle the clearing of tags if the onClearAll event isn't passed, preventing errors and enhancing functionality.
 
@@ -154,7 +140,6 @@
 ### Patch Changes
 
 - 28aec5a: 🛠️ Changes
-
   - Refactored inputFieldPosition prop: Removed the inline option from inputFieldPosition.
   - Renamed includeTagsInInput prop to inlineTags for better clarity and consistency.
 
@@ -163,7 +148,6 @@
 ### Minor Changes
 
 - 36b0af1: 🚀 Features
-
   - Added state management for active tag index
   - Implemented keyboard navigation for tag input
   - Integrated keyboard navigation support with custom tags
@@ -176,7 +160,6 @@
 ### Patch Changes
 
 - d1ba01e: 🐞 Bug Fixes
-
   - Added dynamic width calculation for the tag popover to fix and issue where the popover was taking the full width of the site body
   - Ensured the input field within the popover remains editable when the popover is open.
 
@@ -185,7 +168,6 @@
 ### Minor Changes
 
 - 79b539d: 🚀 Features
-
   - Added a popover to display the autocomplete list with dynamic width, ensuring the list options do not take up too much screen space, especially beneficial for mobile devices.
   - Added a checkbox indicator to visually show selected items in the autocomplete list.
   - Set a maximum height for the command list to improve usability and prevent overflow issues.
@@ -195,7 +177,6 @@
 ### Patch Changes
 
 - 0c5691f: 🐞 Bug Fixes
-
   - Applied a width of `fit-content` to the input component when `includeTagsInInput` is enabled.
   - Addressed an issue where the input was taking the full width of the container, causing tags to stack on top of the input.
   - Ensured that the input and tags are displayed inline, improving the user experience and layout consistency.
@@ -211,7 +192,6 @@
 ### Minor Changes
 
 - 4d808e2: 🚀 Features
-
   - Introduced includeTagsInInput prop to allow tags to be rendered inside the input field.
   - Adjusted TagList to support inline rendering of tags within the input field.
 
