@@ -1,3 +1,15 @@
+# This is a fork and (react 19) bumped version of emblor.
+
+### After a few months of no merging and warning on the original repo I decided to fork, bump and keep it up to date
+
+### Feel free to contribute
+
+---
+
+---
+
+---
+
 https://github.com/JaleelB/emblor/assets/78449846/7f678789-ef5e-4913-b26c-9317003d6dbc
 
 [Emblor](https://emblor.jaleelbennett.com/) is a highly customizable, accessible, and fully-featured tag input component built with Shadcn UI.
