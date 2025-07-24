@@ -1,5 +1,11 @@
 # emblor
 
+## 1.4.10
+
+### Patch Changes
+
+- bumped dependency versions, update radix-ui packages for bug fixes.
+
 ## 1.4.8
 
 ### Patch Changes
